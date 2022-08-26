@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML-TO-JS-1</title>
+    </head>
+    <body>
+        <div id="div1"></div>
+        <script>
+            const h1 = document.createElement("h1");//creation de la var h1 de type h1
+            h1.innerHTML = "My First heading";//definition du text 
+
+            const p = document.createElement("p");
+            p.innerHTML = "My first paragraph";
+            
+            const element = document.getElementById("div1");//affectation de la div a une variable
+            element.appendChild(h1);//ajout du h1 a la div
+            element.appendChild(p);
+
+
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML-TO-JS-4</title>
+    </head>
+    <body>
+        <div id="div1"></div>
+
+        <script>
+
+            document.head.innerHTML = '<style>p.error {color: red;}</style>';
+
+            const p1 = document.createElement("p");
+            p1.innerText = "This is a paragraph";
+
+            const p2 = document.createElement("p");
+            p2.innerText = "This is a paragraph";
+
+            const p3 = document.createElement("p");
+            
+            p3.classList.add("error");
+            p3.innerText = "I am different.";
+
+            const p4 = document.createElement("p");
+            p4.innerText = "This is a paragraph";
+
+            const p5 = document.createElement("p");
+            p5.classList.add("error");
+            p5.innerText = "I am different too.";       
+
+            const element = document.getElementById("div1");
+                element.appendChild(p1);
+                element.appendChild(p2);
+                element.appendChild(p3);
+                element.appendChild(p4);
+                element.appendChild(p5);
+
+        </script>
+    </body>
+</html>

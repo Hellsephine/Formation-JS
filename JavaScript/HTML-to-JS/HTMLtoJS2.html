@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-TO-JS-2</title>
+</head>
+<body>
+    <div id="div1"></div>
+
+    <script>
+        const h2 = document.createElement("h2");
+            h2.innerHTML = "HTML Links";
+            
+        const p = document.createElement("p");
+            p.innerHTML = "HTML links are defined with the a tag:";
+
+        const a = document.createElement("a");//Creation de la balise lien
+            a.innerText = "This is a link";//definition du text qui apparait
+            a.href=("https://www.w3schools.com");//lien voulu
+
+        const element = document.getElementById("div1");
+            element.appendChild(h2);
+            element.appendChild(p);
+            element.appendChild(a);
+
+    </script>
+</body>
+</html>

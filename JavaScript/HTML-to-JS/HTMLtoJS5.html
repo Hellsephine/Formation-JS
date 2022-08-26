@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>table, th, td {border: 1px solid black;}</style>
+    </head>
+    <body>
+        <div id="div1"></div>
+        <script>
+            const h2 = document.createElement("h2");
+                h2.innerHTML = "Table With Border";
+
+            const p = document.createElement("p");
+                p.innerHTML = "Use the CSS border property to add a border to the table";
+
+            const t = document.createElement("table");
+                const tr = document.createElement("tr");
+                    t.appendChild(tr);
+                        const th = document.createElement("th");
+                        tr.appendChild(th);
+                        th.innerHTML = "Firstname";
+                        const th1 = document.createElement("th");
+                        tr.appendChild(th1);
+                        th1.innerHTML = "Lastname";
+                        const th2 = document.createElement("th");
+                        tr.appendChild(th2);
+                        th2.innerHTML = "Age";
+                const tr1 = document.createElement("tr");
+                    t.appendChild(tr1);
+                        const td = document.createElement("td");
+                        tr1.appendChild(td);
+                        td.innerHTML = "Jill";
+                        const td1 = document.createElement("td");
+                        tr1.appendChild(td1);
+                        td1.innerHTML = "Smith";
+                        const td2 = document.createElement("td");
+                        tr1.appendChild(td2);
+                        td2.innerHTML = "50";
+                const tr2 = document.createElement("tr");
+                    t.appendChild(tr2);
+                        const td3 = document.createElement("td");
+                        tr2.appendChild(td3);
+                        td3.innerHTML = "Eve";
+                        const td4 = document.createElement("td");
+                        tr2.appendChild(td4);
+                        td4.innerHTML = "Jackson";
+                        const td5 = document.createElement("td");
+                        tr2.appendChild(td5);
+                        td5.innerHTML = "94";
+                const tr3 = document.createElement("tr");
+                    t.appendChild(tr2);
+                        const td6 = document.createElement("td");
+                        tr3.appendChild(td6);
+                        td6.innerHTML = "John";
+                        const td7 = document.createElement("td");
+                        tr3.appendChild(td7);
+                        td7.innerHTML = "Doe";
+                        const td8 = document.createElement("td");
+                        tr3.appendChild(td8);
+                        td8.innerHTML = "80";
+
+                    
+                    
+
+            const element = document.getElementById("div1");
+                element.appendChild(h2);
+                element.appendChild(p);
+                element.appendChild(t);
+        </script>
+    </body>
+</html>

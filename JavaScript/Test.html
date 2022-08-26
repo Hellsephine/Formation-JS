@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <script>
+        document.body.innerHTML = '<p>This is a paragraph</p>'
+
+        const d = document.createElement("div");
+        d.id = "div1";
+
+        const p1 = document.createElement("p");
+            p1.innerText = "This is a paragraph";
+        d.appendChild(p1);
+        document.body.appendChild(d);
+    </script>
+</body>
+</html>
