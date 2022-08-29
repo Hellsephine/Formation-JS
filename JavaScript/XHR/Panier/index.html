@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="./style.css" />
+        <title>Panier de produit !</title>
+    </head>
+    <body>
+        <div id="items">
+        </div>
+        <p>Montant total : <span id="total">0</span>€</p>
+        <a onclick=" return load(this.href)" href="http://data.snx.ovh/page1.json">Catégorie 1</a>
+        <a onclick=" return load(this.href)" href="http://data.snx.ovh/page2.json">Catégorie 2</a>
+        <!--pour ajouter une nouvelle catégorie,il suffit d'ajouter une nouvelle ligne avec un liens comme au dessus-->
+        <script src="panier.js">
+        </script>
+    </body>
+</html>
